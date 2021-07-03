@@ -14259,7 +14259,7 @@ a.anchor-link {
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">scikit</span><span class="o">-</span><span class="n">learn</span>
@@ -14284,14 +14284,14 @@ a.anchor-link {
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Collecting scikit-learn
   Downloading scikit_learn-0.24.2-cp38-cp38-manylinux2010_x86_64.whl (24.9 MB)
-     |████████████████████████████████| 24.9 MB 4.7 MB/s eta 0:00:01
+     |████████████████████████████████| 24.9 MB 4.5 MB/s eta 0:00:01
 Requirement already satisfied: numpy&gt;=1.13.3 in /srv/conda/envs/notebook/lib/python3.8/site-packages (from scikit-learn) (1.21.0)
-Collecting joblib&gt;=0.11
-  Downloading joblib-1.0.1-py3-none-any.whl (303 kB)
-     |████████████████████████████████| 303 kB 67.9 MB/s eta 0:00:01
 Requirement already satisfied: scipy&gt;=0.19.1 in /srv/conda/envs/notebook/lib/python3.8/site-packages (from scikit-learn) (1.7.0)
 Collecting threadpoolctl&gt;=2.0.0
   Downloading threadpoolctl-2.1.0-py3-none-any.whl (12 kB)
+Collecting joblib&gt;=0.11
+  Downloading joblib-1.0.1-py3-none-any.whl (303 kB)
+     |████████████████████████████████| 303 kB 82.0 MB/s eta 0:00:01
 Installing collected packages: threadpoolctl, joblib, scikit-learn
 Successfully installed joblib-1.0.1 scikit-learn-0.24.2 threadpoolctl-2.1.0
 Note: you may need to restart the kernel to use updated packages.
@@ -14306,7 +14306,7 @@ Note: you may need to restart the kernel to use updated packages.
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LinearRegression</span>
@@ -14324,11 +14324,11 @@ Note: you may need to restart the kernel to use updated packages.
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;regrex1.csv&quot;</span><span class="p">)</span>
-<span class="n">df</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14344,189 +14344,43 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>y</th>
-      <th>x</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>6.8102</td>
-      <td>9.8492</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>9.8437</td>
-      <td>11.1450</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>4.9767</td>
-      <td>5.1209</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>5.0006</td>
-      <td>8.1085</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>3.5047</td>
-      <td>3.5599</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>3.6419</td>
-      <td>1.9883</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>7.8725</td>
-      <td>15.5322</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>5.1442</td>
-      <td>7.5202</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>8.3883</td>
-      <td>14.0202</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>6.8204</td>
-      <td>7.5226</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>9.0185</td>
-      <td>14.3272</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>2.6148</td>
-      <td>3.8950</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>3.7367</td>
-      <td>1.8707</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>2.8651</td>
-      <td>0.8347</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>10.7469</td>
-      <td>18.3413</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>2.3710</td>
-      <td>1.6645</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>9.6653</td>
-      <td>17.0579</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>7.1926</td>
-      <td>9.2375</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>11.7833</td>
-      <td>21.0000</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>3.9537</td>
-      <td>3.5286</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>15.0000</td>
-      <td>25.0000</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>7.9152</td>
-      <td>9.9008</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>9.3368</td>
-      <td>17.5990</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>8.7587</td>
-      <td>13.8790</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>6.7813</td>
-      <td>10.8690</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>7.9924</td>
-      <td>12.6238</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>2.2806</td>
-      <td>0.9719</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>10.4050</td>
-      <td>14.4814</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>3.7891</td>
-      <td>2.1792</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>10.9067</td>
-      <td>18.4052</td>
-    </tr>
-  </tbody>
-</table>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>          y        x
+0    6.8102   9.8492
+1    9.8437  11.1450
+2    4.9767   5.1209
+3    5.0006   8.1085
+4    3.5047   3.5599
+5    3.6419   1.9883
+6    7.8725  15.5322
+7    5.1442   7.5202
+8    8.3883  14.0202
+9    6.8204   7.5226
+10   9.0185  14.3272
+11   2.6148   3.8950
+12   3.7367   1.8707
+13   2.8651   0.8347
+14  10.7469  18.3413
+15   2.3710   1.6645
+16   9.6653  17.0579
+17   7.1926   9.2375
+18  11.7833  21.0000
+19   3.9537   3.5286
+20  15.0000  25.0000
+21   7.9152   9.9008
+22   9.3368  17.5990
+23   8.7587  13.8790
+24   6.7813  10.8690
+25   7.9924  12.6238
+26   2.2806   0.9719
+27  10.4050  14.4814
+28   3.7891   2.1792
+29  10.9067  18.4052
+</pre>
 </div>
-</div>
-
 </div>
 
 </div>
@@ -14622,7 +14476,7 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Y_pred</span> <span class="o">=</span> <span class="n">linear_regressor</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
-<span class="n">Y_pred</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Y_pred</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14638,44 +14492,42 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[7]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[ 6.86803101],
-       [ 7.47584191],
-       [ 4.65016382],
-       [ 6.05153429],
-       [ 3.91795759],
-       [ 3.18077931],
-       [ 9.53371196],
-       [ 5.77558495],
-       [ 8.82448979],
-       [ 5.7767107 ],
-       [ 8.96849191],
-       [ 4.07514036],
-       [ 3.12561759],
-       [ 2.63966906],
-       [10.85135482],
-       [ 3.02889694],
-       [10.24936029],
-       [ 6.58110561],
-       [12.09845071],
-       [ 3.90327594],
-       [13.97469984],
-       [ 6.89223462],
-       [10.50316989],
-       [ 8.7582582 ],
-       [ 7.34638072],
-       [ 8.16949122],
-       [ 2.70402441],
-       [ 9.04082132],
-       [ 3.2703233 ],
-       [10.8813279 ]])</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[[ 6.86803101]
+ [ 7.47584191]
+ [ 4.65016382]
+ [ 6.05153429]
+ [ 3.91795759]
+ [ 3.18077931]
+ [ 9.53371196]
+ [ 5.77558495]
+ [ 8.82448979]
+ [ 5.7767107 ]
+ [ 8.96849191]
+ [ 4.07514036]
+ [ 3.12561759]
+ [ 2.63966906]
+ [10.85135482]
+ [ 3.02889694]
+ [10.24936029]
+ [ 6.58110561]
+ [12.09845071]
+ [ 3.90327594]
+ [13.97469984]
+ [ 6.89223462]
+ [10.50316989]
+ [ 8.7582582 ]
+ [ 7.34638072]
+ [ 8.16949122]
+ [ 2.70402441]
+ [ 9.04082132]
+ [ 3.2703233 ]
+ [10.8813279 ]]
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -14721,20 +14573,6 @@ Note: you may need to restart the kernel to use updated packages.
 
 </div>
 
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-     </div>
-</div>
-</div>
 </div>
 
 </div>
